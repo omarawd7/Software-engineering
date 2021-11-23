@@ -2,9 +2,7 @@ import java.util.Scanner;
 
 abstract class registeration {
 
-static	public void register() {
-	
-	
+static	public void register() {	
 		Scanner sc =new Scanner(System.in);
 		String n;
 		 System.out.println("Are You A User or A Driver");		
@@ -21,9 +19,6 @@ static	public void register() {
 		 }				
 	};
 
-	public static void main(String[] args) {		 
-		 register();
-	  }
 	
 
 }

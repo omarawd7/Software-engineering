@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class DriverRegestration extends registeration{
 	public void register(User s) {		
+		//DriverVerfication d=new DriverVerfication();
 		String n;
 		String un;
 		String p;
@@ -34,6 +35,7 @@ public class DriverRegestration extends registeration{
 		  ((DriverUser) s).setNationalID(na);
 		  ((DriverUser) s).setDriverLiecense(li);
 		  
+		  DriverVerfication.setPendingDrivers((DriverUser) s);
 		  
 		  System.out.println("data saved correctly");
 		

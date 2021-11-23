@@ -1,102 +1,70 @@
   class User {
-	String Username;
-	String name;
-	String Password;
-	String Mail;
-	String phone;
-	
-	public String getname() {
-	return Username;
-   }	
-public void setname(String n) {
-	name = n;
-   }
-	public User(String username, String name, String password, String mail, String phone) {
-	
-	Username = username;
-	this.name = name;
-	Password = password;
-	Mail = mail;
-	this.phone = phone;
-}	
-	public User() {
-		
+	    private String UserName;
+	    private String Name;
+		private String password;
+	    private String Phone;
+	    private String eMail;
+	 //   private String nationalID;
 
-}
-			public String getUsername() {
-		return Username;
-	}
-			
-	public void setUsername(String username) {
-		Username = username;
-	}
+	    public String getName() {
+			return Name;
+		}
 
+		public void setName(String name) {
+			Name = name;
+		}
+	    public String getUserName() {
+	        return UserName;
+	    }
 
-	public String getPassword() {
-		return Password;
-	}
+	    public User(String UserName,String Name, String password, String Phone, String eMail) {
+	        this.UserName = UserName;
+	        this.Name = Name;
+	        this.password = password;
+	        this.Phone = Phone;
+	        this.eMail = eMail;
+	    //    this.nationalID = nationalID;
+	    }
 
+	    public User() {
+			// TODO Auto-generated constructor stub
+		}
 
+		public void setUserName(String UserName) {
+	        this.UserName = UserName;
+	    }
 
+	    public String getPassword() {
+	        return password;
+	    }
 
+	    public void setPassword(String password) {
+	        this.password = password;
+	    }
 
+	    public String getPhone() {
+	        return Phone;
+	    }
 
-	public void setPassword(String password) {
-		Password = password;
-	}
+	    public void setPhone(String Phone) {
+	        this.Phone = Phone;
+	    }
 
+	    public String geteMail() {
+	        return eMail;
+	    }
 
+	    public void seteMail(String eMail) {
+	        this.eMail = eMail;
+	    }
 
+	 /*   public String getNationalID() {
+	        return nationalID;
+	    }
 
+	    public void setNationalID(String nationalID) {
+	        this.nationalID = nationalID;
+	    }
 
-
-	public String getMail() {
-		return Mail;
-	}
-
-
-
-
-
-
-	public void setMail(String mail) {
-		Mail = mail;
-	}
-
-
-
-
-
-
-	public String getPhone() {
-		return phone;
-	}
-
-
-
-
-
-
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-
-
-
-
-
-
-
-
-
-		
-	
-	
-	  public static void main(String[] args) {
-	
-		  }
-
-	
-
-
+*/
 }
